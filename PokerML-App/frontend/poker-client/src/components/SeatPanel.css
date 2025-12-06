@@ -1,0 +1,178 @@
+.seat-panel {
+  position: absolute;
+  width: 128px;
+  padding: 0.6rem;
+  border-radius: 10px;
+  background: rgba(10, 10, 20, 0.85);
+  color: #f0f5ff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  transform: translate(-50%, -50%);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.seat-panel.hero {
+  border-color: #66d9ff;
+  box-shadow: 0 0 8px rgba(102, 217, 255, 0.7);
+}
+
+.seat-panel.active {
+  box-shadow: 0 0 10px rgba(255, 214, 102, 0.9);
+}
+
+.seat-panel.folded {
+  opacity: 0.5;
+}
+
+.seat-panel.all-in::after {
+  content: 'ALL IN';
+  display: block;
+  color: #ff6b6b;
+  font-weight: 600;
+  margin-top: 0.15rem;
+  font-size: 0.7rem;
+}
+
+.seat-name {
+  font-weight: 600;
+  margin-bottom: 0.15rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.2rem;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.button-chip {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #ffd166;
+  color: #000;
+  font-size: 0.65rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.seat-stack {
+  font-size: 0.72rem;
+  color: #cfd4ff;
+}
+
+.seat-style {
+  margin-top: 0.15rem;
+  font-size: 0.72rem;
+  color: #a7b1e3;
+}
+
+.seat-bet {
+  font-size: 0.68rem;
+  margin-top: 0.15rem;
+  min-height: 1rem;
+}
+
+.seat-bet.has-bet {
+  background: rgba(255, 214, 102, 0.2);
+  border: 1px solid rgba(255, 214, 102, 0.5);
+  border-radius: 6px;
+  padding: 0.15rem 0.35rem;
+  font-weight: 600;
+  color: #ffd166;
+  animation: pulse-bet 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse-bet {
+  0%, 100% {
+    box-shadow: 0 0 4px rgba(255, 214, 102, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 12px rgba(255, 214, 102, 0.7);
+  }
+}
+
+.seat-cards {
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+  margin-top: 0.4rem;
+}
+
+.card {
+  width: 41px;
+  height: 61px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  font-weight: 700;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+.card.face-up {
+  background: #ffffff;
+  color: #000;
+}
+
+.card.face-up .suit-spades,
+.card.face-up .suit-clubs {
+  color: #000000;
+}
+
+.card.face-up .suit-hearts,
+.card.face-up .suit-diamonds {
+  color: #d32f2f;
+}
+
+.card.back {
+  background: linear-gradient(135deg, #2f3b70, #11152c);
+  border-color: rgba(102, 217, 255, 0.3);
+}
+
+.seat-panel.winner {
+  animation: winner-glow 2s ease-in-out;
+  border-color: #4caf50;
+  box-shadow: 0 0 30px rgba(76, 175, 80, 0.9);
+}
+
+@keyframes winner-glow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(76, 175, 80, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(76, 175, 80, 1);
+  }
+}
+
+.seat-panel .win-badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: #4caf50;
+  color: white;
+  padding: 0.3rem 0.6rem;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  animation: win-badge-appear 0.5s ease-out;
+}
+
+@keyframes win-badge-appear {
+  0% {
+    transform: scale(0) rotate(-180deg);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}

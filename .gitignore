@@ -1,9 +1,27 @@
-# Ignore everything except the PokerML-Databricks subfolder
-*
-
-# Allow the subfolder structure
+# Root README
+!README.md
 !.gitignore
+
+# PokerML-Databricks subfolder
 !PokerML-Databricks/
-!PokerML-Databricks/README.md
-!PokerML-Databricks/notebooks/
-!PokerML-Databricks/notebooks/**
+!PokerML-Databricks/**
+
+# PokerML-App subfolder
+!PokerML-App/
+!PokerML-App/**
+
+# Ignore common development artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+node_modules/
+.env
+.env.local
+*.log
+.DS_Store
+Thumbs.db
+dist/
+build/
+*.egg-info/

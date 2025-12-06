@@ -1,0 +1,57 @@
+# Virtual environments
+.venv/
+venv/
+env/
+backend/.venv/
+
+# Node modules
+node_modules/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# IDE/Editor
+.claude/
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Test files
+test_*.py
+backend/test_*.py
+
+# Documentation (keep in repo but exclude troubleshooting)
+DEPLOYMENT_TROUBLESHOOTING.md
+docs/
+
+# OS files
+.DS_Store
+Thumbs.db
+nul
+
+# Environment files (keep .env.example)
+.env
+.env.local
+.env.*.local
+
+# Build outputs
+dist/
+build/
+*.egg-info/
+
+# Logs
+*.log
+logs/
+
+# Misc artifacts
+=1.0.0
+app__init__.py
+appmlservice.py
+
+# Database files
+*.db
+*.sqlite3

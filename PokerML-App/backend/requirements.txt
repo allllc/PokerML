@@ -1,0 +1,17 @@
+fastapi>=0.110.0
+uvicorn[standard]>=0.23.0
+pydantic>=2.5.0
+langchain>=0.2.7
+langchain-openai>=0.1.10
+openai>=1.0.0
+python-dotenv>=1.0.1
+
+# ML Integration
+httpx>=0.25.0  # Async HTTP client for Databricks endpoints
+treys>=0.1.8   # Poker hand evaluation
+
+# Database (optional - for persistent storage)
+asyncpg>=0.29.0  # PostgreSQL async driver
+
+# GCP Integration
+google-cloud-secret-manager>=2.18.0  # Secret Manager for credentials

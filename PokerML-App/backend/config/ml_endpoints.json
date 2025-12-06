@@ -1,0 +1,88 @@
+{
+  "endpoints": {
+    "opponent_preflop": {
+      "name": "opponent_preflop",
+      "url": "https://3866123326870389.9.gcp.databricks.com/serving-endpoints/01-opponent-modeling-preflop-v3/invocations",
+      "model_version": "3",
+      "enabled": true,
+      "timeout_ms": 600000
+    },
+    "opponent_flop": {
+      "name": "opponent_flop",
+      "url": "https://3866123326870389.9.gcp.databricks.com/serving-endpoints/01-opponent-modeling-flop-v3/invocations",
+      "model_version": "3",
+      "enabled": true,
+      "timeout_ms": 600000
+    },
+    "opponent_turn": {
+      "name": "opponent_turn",
+      "url": "https://3866123326870389.9.gcp.databricks.com/serving-endpoints/01-opponent-modeling-turn-v3/invocations",
+      "model_version": "3",
+      "enabled": true,
+      "timeout_ms": 600000
+    },
+    "opponent_river": {
+      "name": "opponent_river",
+      "url": "https://3866123326870389.9.gcp.databricks.com/serving-endpoints/01-opponent-modeling-river-v3/invocations",
+      "model_version": "3",
+      "enabled": true,
+      "timeout_ms": 600000
+    },
+    "profit_preflop": {
+      "name": "profit_preflop",
+      "url": "https://3866123326870389.9.gcp.databricks.com/serving-endpoints/02-profit-modeling-preflop-v3/invocations",
+      "model_version": "3",
+      "enabled": true,
+      "timeout_ms": 600000
+    },
+    "profit_flop": {
+      "name": "profit_flop",
+      "url": "https://3866123326870389.9.gcp.databricks.com/serving-endpoints/02-profit-modeling-flop-v3/invocations",
+      "model_version": "3",
+      "enabled": true,
+      "timeout_ms": 600000
+    },
+    "profit_turn": {
+      "name": "profit_turn",
+      "url": "https://3866123326870389.9.gcp.databricks.com/serving-endpoints/02-profit-modeling-turn-v3/invocations",
+      "model_version": "3",
+      "enabled": true,
+      "timeout_ms": 600000
+    },
+    "profit_river": {
+      "name": "profit_river",
+      "url": "https://3866123326870389.9.gcp.databricks.com/serving-endpoints/02-profit-modeling-river-v3/invocations",
+      "model_version": "3",
+      "enabled": true,
+      "timeout_ms": 600000
+    },
+    "policy_preflop": {
+      "name": "policy_preflop",
+      "url": "https://3866123326870389.9.gcp.databricks.com/serving-endpoints/03-policy-modeling-preflop-v3/invocations",
+      "model_version": "3",
+      "enabled": true,
+      "timeout_ms": 600000
+    },
+    "policy_flop": {
+      "name": "policy_flop",
+      "url": "https://3866123326870389.9.gcp.databricks.com/serving-endpoints/03-policy-modeling-flop-v3/invocations",
+      "model_version": "3",
+      "enabled": true,
+      "timeout_ms": 600000
+    },
+    "policy_turn": {
+      "name": "policy_turn",
+      "url": "https://3866123326870389.9.gcp.databricks.com/serving-endpoints/03-policy-modeling-turn-v3/invocations",
+      "model_version": "3",
+      "enabled": true,
+      "timeout_ms": 600000
+    },
+    "policy_river": {
+      "name": "policy_river",
+      "url": "https://3866123326870389.9.gcp.databricks.com/serving-endpoints/03-policy-modeling-river-v3/invocations",
+      "model_version": "3",
+      "enabled": true,
+      "timeout_ms": 600000
+    }
+  }
+}

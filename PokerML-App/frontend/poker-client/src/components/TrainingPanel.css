@@ -1,0 +1,66 @@
+.training-panel {
+  width: 260px;
+  background: rgba(9, 12, 28, 0.95);
+  border-radius: 16px;
+  padding: 1.25rem;
+  color: #dfe6ff;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.panel-section h3,
+.panel-section h4 {
+  margin-bottom: 0.4rem;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.toggle input {
+  transform: scale(1.2);
+}
+
+.panel-section ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  font-size: 0.95rem;
+  color: #b6bdd8;
+}
+
+.player-list li {
+  margin-bottom: 0.25rem;
+}
+
+.player-list li.folded {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.style-tag {
+  font-size: 0.75rem;
+  color: #9acbff;
+}
+
+.open-agent-panel {
+  margin-top: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  border: none;
+  background: linear-gradient(135deg, #6d7bff, #4ec9ff);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.open-agent-panel:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+  background: #3a446d;
+}

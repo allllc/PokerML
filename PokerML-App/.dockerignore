@@ -1,0 +1,60 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv
+venv/
+ENV/
+env/
+.eggs/
+*.egg-info/
+*.egg
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+.npm
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment files (secrets!)
+.env
+.env.local
+.env.*.local
+
+# Build artifacts
+dist/
+build/
+*.log
+
+# Test artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Docker
+docker-compose*
+.docker/
+
+# Keep Dockerfiles - they are needed for builds
+!**/Dockerfile
+!Dockerfile
+
+# Documentation
+*.md
+LICENSE
+
+# OS
+.DS_Store
+Thumbs.db
