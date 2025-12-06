@@ -2,6 +2,16 @@
 
 Machine Learning for Poker - A complete end-to-end ML pipeline for poker game analysis and intelligent play.
 
+## Architecture
+
+![PokerML Architecture](./assets/architecture.png)
+
+The system consists of:
+1. **Development** - VS Code with Claude for application development
+2. **Training & Serving (GCP/Databricks)** - Feature generation, model training, validation with MLflow, and deployment to Unity Catalog endpoints
+3. **ML Models** - Opponent Modeling, Profit Modeling, and Policy Modeling (each with Preflop, Flop, Turn, River variants)
+4. **Web Application** - Docker container on Cloud Run with Cloud SQL, Secret Manager, and LangChain integration calling GPT-4o
+
 ## Repository Structure
 
 ```

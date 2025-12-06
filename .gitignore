@@ -2,6 +2,10 @@
 !README.md
 !.gitignore
 
+# Assets folder
+!assets/
+!assets/**
+
 # PokerML-Databricks subfolder
 !PokerML-Databricks/
 !PokerML-Databricks/**
