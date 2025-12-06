@@ -1,0 +1,8 @@
+# Ignore everything
+*
+
+# But not these files/folders
+!README.md
+!.gitignore
+!notebooks/
+!notebooks/**
