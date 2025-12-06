@@ -1,8 +1,9 @@
-# Ignore everything
+# Ignore everything except the PokerML-Databricks subfolder
 *
 
-# But not these files/folders
-!README.md
+# Allow the subfolder structure
 !.gitignore
-!notebooks/
-!notebooks/**
+!PokerML-Databricks/
+!PokerML-Databricks/README.md
+!PokerML-Databricks/notebooks/
+!PokerML-Databricks/notebooks/**
